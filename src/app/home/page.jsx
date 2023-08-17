@@ -25,7 +25,7 @@ const Page = () => {
           </div>
           <div>
             <button className="rounded-[80px] py-3 px-6 bg-[#ffffff33] hover:opacity-[0.60]">
-              Buy Template
+              Wallet Connect
             </button>
           </div>
         </div>
