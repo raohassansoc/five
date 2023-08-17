@@ -2,26 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.back-cover {
+  background: radial-gradient(
+    38.800000000000004% 42.6% at 57.3% 53.300000000000004%,
+    rgba(190, 248, 79, 0.2) 0%,
+    rgb(14, 14, 14) 100%
+  );
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.back-image-one {
+  background: url(../../public/images/five-one.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  align-items: flex-end;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.back-image-two {
+  background: url(../../public/images/five-two.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.b-box {
+  backdrop-filter: blur(12.5px);
+  border-radius: 8px;
+}
+
+.b-box:hover {
+  height: 150px;
 }
